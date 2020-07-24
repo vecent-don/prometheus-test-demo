@@ -22,3 +22,4 @@ node('master') {
         sh 'kubectl apply -f ./jenkins/scripts/prometheus-demo.yaml'
     }
 }
+
