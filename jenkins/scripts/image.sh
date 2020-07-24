@@ -4,7 +4,7 @@ set -x
  
 IMAGE_NAME="prometheus-test-demo"
 VERSION_ID="${BUILD_ID}"
-IMAGE_ADDR="https://test-harbor.daocloud.io/library/${IMAGE_NAME}"
+IMAGE_ADDR="test-harbor.daocloud.io/library/${IMAGE_NAME}"
  
 docker build -f Dockerfile --build-arg jar_name=target/prometheus-test-demo-0.0.1-SNAPSHOT.jar -t ${IMAGE_NAME}:${VERSION_ID} .
  
