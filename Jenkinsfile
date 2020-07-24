@@ -18,7 +18,7 @@ node('master') {
            sh './jenkins/scripts/image.sh'
     }
     stage('deploy to k8s') {
-        sh 'sed -i "s#{VERSION}#${BUILD_ID}#g" ./jenkins/scripts/java-demo.yaml'
+        sh 'sed -i "s#{VERSION}#${BUILD_ID}#g" ./jenkins/scripts/prometheus-demo.yaml'
         sh 'kubectl apply -f ./jenkins/scripts/prometheus-demo.yaml'
     }
 }
