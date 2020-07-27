@@ -35,6 +35,7 @@ spec:
   selector:
     app: prometheus-test-demo
   ports:
-  - protocol: TCP
+  - name: tcp
+    protocol: TCP
     port: 8998
     targetPort: 8998
