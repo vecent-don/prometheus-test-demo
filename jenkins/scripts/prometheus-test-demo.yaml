@@ -28,5 +28,5 @@ spec:
     app: prometheus-test-demo
   ports:
   - protocol: TCP
-    port: 9090
-    targetPort: 9090
+    port: 8998
+    targetPort: 8998
