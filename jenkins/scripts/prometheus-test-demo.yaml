@@ -12,6 +12,11 @@ spec:
       app: prometheus-test-demo
   template:
     metadata:
+      annotations:
+        prometheus.io/path: /actuator/prometheus
+        prometheus.io/port: "8998"
+        prometheus.io/scheme: http
+        prometheus.io/scrape: "true"
       labels:
         app: prometheus-test-demo
     spec:
